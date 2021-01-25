@@ -1,0 +1,39 @@
+@use "./../palette" as pl;
+
+$breakpoint: 480px; // width breakpoint switching the layout for smart-phone
+
+@mixin list {
+
+  ol {
+    margin-bottom: 2.5rem;
+
+    p.title {
+      font-weight: bold;
+      word-wrap: break-word;
+
+      a {
+        font: inherit;
+        color: inherit;
+        line-height: inherit;
+        text-decoration: underline;
+        &:visited {
+          color: inherit;
+        }
+      }
+
+    }
+
+    p.sub {
+      font-size: 0.85rem !important;
+      line-height: 1.3rem !important;
+      @media screen and (max-width: #{$breakpoint}) {
+        font-size: 0.75rem !important;
+        line-height: 1.0rem !important;
+      }
+      color: pl.$st-sub !important;
+    }
+
+  } // ol
+
+}
+

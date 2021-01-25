@@ -1,0 +1,125 @@
+@use "./../palette" as pl;
+
+$breakpoint: 480px; // width breakpoint switching the layout for smart-phone
+
+@mixin wrapper { // base config of .wrapper class
+  box-sizing: border-box;
+  min-height: 100%;
+  padding: 3rem;
+  @media screen and (max-width: #{$breakpoint}) {
+    padding: 2rem 0.5rem;
+  }
+  text-align: center;
+
+  & > .container {
+    box-sizing: border-box;
+    max-width: 800px;
+    @media screen and (max-width: #{$breakpoint}) {
+      max-width: 96vw;
+    }
+    display: inline-block;
+    text-align: left;
+
+    & > h1 {
+       font-size: 1.8rem;
+       font-weight: normal;
+       color: pl.$st-title;
+       padding-left: 1rem;
+       margin-bottom: 1.8rem;
+    }
+
+    & > section {
+      &:not(:last-child) {
+        margin-bottom: 2.5rem;
+      }
+      & > *:not(hr) {
+        padding: 0 1rem;
+      }
+
+       & > h2 {
+         font-size: 1.4rem;
+         line-height: 2.2rem;
+         font-weight: normal;
+         color: pl.$st-title;
+       }
+
+       & > hr {
+         margin-top: 0.2rem;
+         margin-bottom: 1rem;
+       }
+
+       & > h3 {
+         font-size: 1.2rem;
+         font-weight: normal;
+         margin: 1.6rem 0 0.8rem 0;
+         color: pl.$st-title-sub;
+         text-decoration: underline;
+       }
+
+       & > ul {
+         padding-left: 3rem;
+         @media screen and (max-width: #{$breakpoint}) {
+           padding-left: 2.2rem;
+         }
+         & > li {
+           margin-bottom: 0.5rem;
+         }
+       }
+
+       & > ol {
+         padding-left: 2.5rem;
+         @media screen and (max-width: #{$breakpoint}) {
+           padding-left: 2.0rem;
+         }
+         & > li {
+           margin-bottom: 0.5rem;
+           padding-left: 0.5rem;
+         }
+       }
+
+       p {
+         font-size: 0.95rem;
+         line-height: 1.6rem;
+         @media screen and (max-width: #{$breakpoint}) {
+           font-size: 0.8rem;
+           line-height: 1.3rem;
+         }
+         color: pl.$st-main;
+         word-break: keep-all;
+
+         &.sub {
+           color: pl.$st-sub;
+           font-size: 0.9rem;
+           line-height: 1.4rem;
+           @media screen and (max-width: #{$breakpoint}) {
+             font-size: 0.7rem;
+           }
+         }
+         &.small {
+           color: pl.$st-main;
+           font-size: 0.85rem;
+           @media screen and (max-width: #{$breakpoint}) {
+             font-size: 0.65rem;
+           }
+         }
+       }
+
+    } // section
+
+    a {
+      color: pl.$st-link;
+      &:hover {
+        color: pl.$st-link-hover;
+      }
+      &:visited {
+        color: pl.$st-link-visited;
+        &:hover {
+          color: pl.$st-link-hover;
+        }
+      }
+    }
+
+  } // .container
+} // .wrapper
+
+

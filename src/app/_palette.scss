@@ -1,0 +1,62 @@
+// ########################################
+//
+// Color Def
+//
+// ########################################
+
+// achromatic
+$black:               #101010;
+$darker:              #202020;
+$dark:                #404040;
+$darkergray:          #505050;
+$gray:                #808080; // = gray
+$light:               #d0d0d0;
+$lighter:             #e8e8e8;
+$white:               #ffffff; // = white
+
+// purple
+$darker-pale-purple:  #453A5C;
+$dark-pale-purple:    #5a5576;
+$dark-purple:         #474073;
+$pale-purple:         #806895;
+$purple:              #8252ab;
+$light-purple:        #af69ec;
+
+// yellow
+$yellow:              #f2b233;
+
+// orange
+$dark-orange:         #d06f00;
+$orange:              #ec8b0c;
+
+// red
+$red:                 #f90032;
+
+// ########################################
+//
+// Color Link
+//
+// ########################################
+
+$st-cover:            $white;
+$st-cover-sub:        $lighter;
+$fl-cover:            $darker-pale-purple;
+$fl-cover-sub:        $darkergray;
+
+$st-title:            $darker-pale-purple;
+$st-title-sub:        $darker-pale-purple;
+$st-main:             $dark;
+$st-sub:              $gray;
+$st-link:             $pale-purple;
+$st-link-visited:     $pale-purple;
+$st-link-hover:       $orange;
+$st-rev:              $white;
+$fl-main:             $white;
+$fl-sub:              $dark;
+$fl-rev:              $darker-pale-purple;
+
+$fl-accent:           $purple;
+$fl-highlight:        $yellow;
+
+
+

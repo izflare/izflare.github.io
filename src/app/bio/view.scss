@@ -1,0 +1,14 @@
+@use "./../palette" as pl;
+@use "./../common/view";
+
+.wrapper {
+  @include view.wrapper;
+
+  ul.cert {
+    & > li {
+       margin-bottom: 0.2rem !important;
+    }
+  }
+}
+
+

@@ -1,0 +1,8 @@
+@use "./../palette" as pl;
+@use "./../common/view";
+
+.wrapper {
+  @include view.wrapper;
+}
+
+

@@ -1,0 +1,10 @@
+@use "./../palette" as pl;
+@use "./../common/work";
+
+section.publications {
+
+  @include work.list;
+
+}
+
+
