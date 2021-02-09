@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useEffect } from "react";
 import * as CONST from "./../../constants";
 import * as AFF from "./../../assets/affiliation";
 import c from "./view.scss";
@@ -6,6 +7,10 @@ import c from "./view.scss";
 export const Links: React.FC<{}> = () => {
 
   const affiliationList = [AFF.ikn, AFF.jsps, AFF.dsmsp, AFF.crest, AFF.gsb, AFF.hgu];
+
+  useEffect(() => {
+    document.getElementById("main")!.scroll(0, 0);
+  }, [])
 
   return (
     <div className={c.wrapper}>

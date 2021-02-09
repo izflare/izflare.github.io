@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import * as CONST from "./../../constants";
 import { positions } from "./../../assets/personal/position";
@@ -31,6 +31,10 @@ export const Home: React.FC<{}> = () => {
 ];
 
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    document.getElementById("main")!.scroll(0, 0);
+  }, [])
 
   return (
     <div className={c.wrapper}>

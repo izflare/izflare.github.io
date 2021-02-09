@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useEffect } from "react";
 import { awards } from "./../../assets/works/awards";
 import { compDate, dtw } from "./../../utils/date";
 import { Publications } from "./publications";
@@ -8,6 +9,10 @@ import c from "./view.scss";
 export const Works: React.FC<{}> = () => {
 
   const awardList = awards.sort((a, b) => compDate(a.at, b.at));
+
+  useEffect(() => {
+    document.getElementById("main")!.scroll(0, 0);
+  }, [])
 
   return (
     <div className={c.wrapper}>

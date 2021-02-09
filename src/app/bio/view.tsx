@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useEffect } from "react";
 import * as CONST from "./../../constants";
 import { positions } from "./../../assets/personal/position";
 import { certs } from "./../../assets/personal/certs";
@@ -10,6 +11,10 @@ export const Bio: React.FC<{}> = () => {
 
   const experienceList = positions.sort((a, b) => compDate(a.period.from, b.period.from));
   const certList = certs;
+
+  useEffect(() => {
+    document.getElementById("main")!.scroll(0, 0);
+  }, [])
 
   return (
     <div className={c.wrapper}>

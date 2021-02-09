@@ -19,9 +19,15 @@ const Navigation: React.FC<{}> = () => {
   const location = useLocation(); // current loc
   const nav = routingList.map((e, i) => {
     // nav btn is highlighted if the corresponding page is currently previewed
-    if (e.url === location.pathname) {
-      return (<Link key={i} className={c.on} to={e.url}>{e.title}</Link>);
-    } else {
+    if (e.url === location.pathname) { // current loc
+      return (
+        <Link key={i} className={c.on} to={e.url}
+          onClick={()=>document.getElementById("main")!.scroll(0, 0)} // reset scroll
+        >
+          {e.title}
+        </Link>
+      );
+    } else { // otherwise
       return (<Link key={i} to={e.url}>{e.title}</Link>);
     }
   });
