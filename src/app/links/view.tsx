@@ -6,7 +6,7 @@ import c from "./view.scss";
 
 export const Links: React.FC<{}> = () => {
 
-  const affiliationList = [AFF.ikn, AFF.jsps, AFF.dsmsp, AFF.crest, AFF.gsb, AFF.hgu];
+  const affiliationList = [AFF.nec_sec, AFF.ikn, AFF.jsps, AFF.dsmsp, AFF.crest, AFF.gsb, AFF.hgu];
 
   useEffect(() => {
     document.getElementById("main")!.scroll(0, 0);

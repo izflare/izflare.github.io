@@ -13,6 +13,18 @@ export interface Position {
 export const positions: Position[] = [
 
   {
+    affiliation: AFF.nec_sec,
+    status: {
+      ja: "研究員",
+      en: "Researcher",
+    },
+    period: {
+      from: {y: 2021, m: 4, d: 1},
+      to: null,
+    },
+  },
+
+  {
     affiliation: AFF.ikn,
     status: {
       ja: "博士研究員",
@@ -20,7 +32,7 @@ export const positions: Position[] = [
     },
     period: {
       from: {y: 2020, m: 10, d: 1},
-      to: null,
+      to: {y: 2021, m: 3, d: 31},
     },
   },
 
@@ -32,7 +44,7 @@ export const positions: Position[] = [
     },
     period: {
       from: {y: 2020, m: 10, d: 1},
-      to: null,
+      to: {y: 2021, m: 3, d: 31},
     },
   },
 

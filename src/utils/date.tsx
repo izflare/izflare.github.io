@@ -49,7 +49,7 @@ export const dtsW: (date: Date | null) => string = date => { // 和暦
 };
 
 export const dtsE: (date: Date | null) => string = date => { // Eng
-  return date ? `${numToMonth(date.m)} ${String(date.y)}` : "Current";
+  return date ? `${numToMonth(date.m)} ${String(date.y)}` : "Present";
 };
 
 
