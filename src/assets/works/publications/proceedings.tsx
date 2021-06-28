@@ -139,6 +139,25 @@ export const reviewed: Proceeding[] = [
 
 export const nonReviewed: Proceeding[] = [
 
+  { title: "デカルト木照合の部分系列への拡張",
+    // {{{
+    author: [
+      "加井 丈志", 
+      "光吉 健汰", 
+      "古谷 勇", 
+      "有村 博紀", 
+    ],
+    booktitle : "信学技報",
+    publisher: "電子情報通信学会",
+    series: null,
+    volume: "vol. 121（COMP2021-6）",
+    number: "11",
+    pages: {from: "39", to: "45"},
+    at: {y: 2021, m: 5, d: 8},
+    link: "https://www.ieice.org/ken/paper/20210508QC3g/",
+    lang: "ja",
+  }, // }}}
+
   { title: "データストリームのための頻出部分文字列発見アルゴリズム",
     // {{{
     author: [
