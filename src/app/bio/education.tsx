@@ -44,7 +44,7 @@ const educationList = [
   },
 
   {
-    status: "同上 修了",
+    status: "同上 修了（在学期間短縮）",
     date: "令和2年（2020年）9月",
   },
 

@@ -51,15 +51,17 @@ export const Home: React.FC<{}> = () => {
           <hr />
           <p>古谷 勇（Isamu FURUYA, Ph.D.）</p>
           <div className={c.contact}>
+            {/*
             <div onClick={() => setOpen(!open)}>
               <a>{ICON.email}</a>
               {open && <>
                 <div className={c.mask} />
                 <div className={c.callout} onClick={e => e.stopPropagation()}>
-                  {CONST.accounts.email}
+                  <s>{CONST.accounts.email}</s>
                 </div>
               </>}
             </div>
+            */}
             {accountList.map((e, i) => {return(
               <div key={i}>
                 <a href={e.href} target="_blank" rel="noopener noreferrer">{e.icon}</a>

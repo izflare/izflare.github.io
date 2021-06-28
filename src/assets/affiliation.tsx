@@ -9,6 +9,17 @@ export interface Affiliation {
   };
 };
 
+export const nec_sec: Affiliation = {
+  name: {
+    ja: "NEC セキュアシステム研究所",
+    en: "NEC Secure System Research Laboratories",
+  },
+  link: {
+    ja: "https://jpn.nec.com/rd/labs/security/index.html",
+    en: "https://www.nec.com/en/global/rd/labs/security/index.html",
+  },
+};
+
 export const ikn: Affiliation = {
   name: {
     ja: "北海道大学 大学院情報科学研究院 情報理工学部門 情報知識ネットワーク研究室",
