@@ -100,6 +100,16 @@ export const Publications: React.FC<{}> = () => {
         })
       }</ol>
 
+      <h3>Books</h3>
+      <ol>
+        <li>
+          <p className={c.author}>Naoki Katoh, Yuya Higashikawa, Hiro Ito, Atsuki Nagao, Tetsuo Shibuya, Adnan Sljoka, Kazuyuki Tanaka, and Yushi Uno:</p>
+          <p className={c.title}></p>
+          {renderTitle("Sublinear Computation Paradigm - Algorithmic Revolution in the Big Data Era", "https://link.springer.com/book/10.1007/978-981-16-4095-7")}
+          <p className={c.sub}>Springer, Singapore, {dtsE({y: 2021, m: 10, d: 0})}. (Contributed article: Chapter 7. Compression and Pattern Matching)</p>
+        </li>
+      </ol>
+
       <h3>Theses</h3>
       <ol>
         <li>

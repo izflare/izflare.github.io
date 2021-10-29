@@ -82,7 +82,7 @@ export const Home: React.FC<{}> = () => {
           }</ul>
 
           <h3>Research Fields</h3>
-          <p>Algorithms, Data Structures, String Data Processing, Lossless Data Compression</p>
+          <p>Algorithms, Data Structures, String Data Processing, Lossless Data Compression, Symmetric Key Cryptography, Message Authentication Codes</p>
         </section>
 
       </div>
